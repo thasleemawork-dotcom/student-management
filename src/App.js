@@ -17,45 +17,45 @@ import ViewStudents from "./components/ViewStudents";
 import StudentProfile from "./components/StudentProfile";
 
 // Staff
-import StaffUpdateForm from "./components/StaffUpdateForm";
-import AdminAddEditStaff from "./components/AdminAddEditStaff";
-import ViewStaff from "./components/ViewStaff";
-import StaffProfile from "./components/StaffProfile";
+// import StaffUpdateForm from "./components/StaffUpdateForm";
+// import AdminAddEditStaff from "./components/AdminAddEditStaff";
+// import ViewStaff from "./components/ViewStaff";
+// import StaffProfile from "./components/StaffProfile";
 
 // Staff Diary
-import StaffDiary from "./components/StaffDiary";
-import ViewStaffDiary from "./components/ViewStaffDiary";
+// import StaffDiary from "./components/StaffDiary";
+// import ViewStaffDiary from "./components/ViewStaffDiary";
 
 // Events
-import EventDetails from "./components/EventDetails";
-import ViewEvents from "./components/ViewEvents";
+// import EventDetails from "./components/EventDetails";
+// import ViewEvents from "./components/ViewEvents";
 
 // Staff Work
-import AssignStaffWork from "./components/AssignStaffWork";
-import ViewAssignStaffWork from "./components/ViewAssignStaffWork";
+// import AssignStaffWork from "./components/AssignStaffWork";
+// import ViewAssignStaffWork from "./components/ViewAssignStaffWork";
 
 // Meetings
-import MeetingMinutes from "./components/MeetingMinutes";
-import ViewMeetingMinutes from "./components/ViewMeetingMinutes";
+// import MeetingMinutes from "./components/MeetingMinutes";
+// import ViewMeetingMinutes from "./components/ViewMeetingMinutes";
 
 // Documents
-import ViewDocument from "./components/ViewDocuments";
-import Document from "./components/Document";
+// import ViewDocument from "./components/ViewDocuments";
+// import Document from "./components/Document";
 
 // Donations
-import ViewDonations from "./components/ViewDonations";
-import DonationForm from "./components/DonationForm";
+// import ViewDonations from "./components/ViewDonations";
+// import DonationForm from "./components/DonationForm";
 
 // Reports
-import ReportForm from "./components/ReportForm";
-import ViewReport from "./components/ViewReport";
+// import ReportForm from "./components/ReportForm";
+// import ViewReport from "./components/ViewReport";
 
 // Accounts
-import Accounts from "./components/Accounts";
+// import Accounts from "./components/Accounts";
 
 // Attendance
-import ViewStaffAttendance from "./components/ViewStaffAttendance";
-import StaffAttendance from "./components/StaffAttendance";
+// import ViewStaffAttendance from "./components/ViewStaffAttendance";
+// import StaffAttendance from "./components/StaffAttendance";
 
 
 // ============================================
@@ -135,30 +135,30 @@ function App() {
             ADMIN STAFF
         ==================================== */}
 
-        <Route
-          path="/admin/add-staff"
-          element={protect(<AdminAddEditStaff />, ["admin"])}
-        />
+        // <Route
+        //   path="/admin/add-staff"
+        //   element={protect(<AdminAddEditStaff />, ["admin"])}
+        // />
 
-        <Route
-          path="/admin/staff/manage"
-          element={protect(<ViewStaff role="admin" />, ["admin"])}
-        />
+        // <Route
+        //   path="/admin/staff/manage"
+        //   element={protect(<ViewStaff role="admin" />, ["admin"])}
+        // />
 
-        <Route
-          path="/admin/edit-staff"
-          element={protect(<AdminAddEditStaff />, ["admin"])}
-        />
+        // <Route
+        //   path="/admin/edit-staff"
+        //   element={protect(<AdminAddEditStaff />, ["admin"])}
+        // />
 
-        <Route
-          path="/staff/profile/:id"
-          element={protect(<StaffProfile />)}
-        />
+        // <Route
+        //   path="/staff/profile/:id"
+        //   element={protect(<StaffProfile />)}
+        // />
 
-        <Route
-          path="/staff/profile-edit/:id"
-          element={protect(<StaffUpdateForm />)}
-        />
+        // <Route
+        //   path="/staff/profile-edit/:id"
+        //   element={protect(<StaffUpdateForm />)}
+        // />
 
 
         {/* ====================================
@@ -180,22 +180,22 @@ function App() {
             ADMIN STAFF WORK
         ==================================== */}
 
-        <Route
-          path="/staff-assignwork/add"
-          element={protect(<AssignStaffWork role="admin" />, ["admin"])}
-        />
+        // <Route
+        //   path="/staff-assignwork/add"
+        //   element={protect(<AssignStaffWork role="admin" />, ["admin"])}
+        // />
 
-        <Route
-          path="/staff-assignwork/manage"
-          element={protect(
-            <ViewAssignStaffWork role={currentRole} />
-          )}
-        />
+        // <Route
+        //   path="/staff-assignwork/manage"
+        //   element={protect(
+        //     <ViewAssignStaffWork role={currentRole} />
+        //   )}
+        // />
 
-        <Route
-          path="/staff-assignwork/edit/:id"
-          element={protect(<AssignStaffWork role="admin" />, ["admin"])}
-        />
+        // <Route
+        //   path="/staff-assignwork/edit/:id"
+        //   element={protect(<AssignStaffWork role="admin" />, ["admin"])}
+        // />
 
 
         {/* ====================================
@@ -232,167 +232,167 @@ function App() {
             STAFF MANAGEMENT
         ==================================== */}
 
-        <Route
-          path="/staff/add"
-          element={protect(<StaffUpdateForm />, ["staff"])}
-        />
+        // <Route
+        //   path="/staff/add"
+        //   element={protect(<StaffUpdateForm />, ["staff"])}
+        // />
 
-        <Route
-          path="/staff/staff/manage"
-          element={protect(<ViewStaff role="staff" />, ["staff"])}
-        />
+        // <Route
+        //   path="/staff/staff/manage"
+        //   element={protect(<ViewStaff role="staff" />, ["staff"])}
+        // />
 
-        <Route
-          path="/staff/edit/:id"
-          element={protect(<StaffUpdateForm />, ["staff"])}
-        />
+        // <Route
+        //   path="/staff/edit/:id"
+        //   element={protect(<StaffUpdateForm />, ["staff"])}
+        // />
 
 
         {/* ====================================
             STAFF DIARY
         ==================================== */}
 
-        <Route
-          path="/staff/staffdiary/add"
-          element={protect(<StaffDiary />, ["staff"])}
-        />
+        // <Route
+        //   path="/staff/staffdiary/add"
+        //   element={protect(<StaffDiary />, ["staff"])}
+        // />
 
-        <Route
-          path="/staff-diary/manage"
-          element={protect(<ViewStaffDiary />, ["staff"])}
-        />
+        // <Route
+        //   path="/staff-diary/manage"
+        //   element={protect(<ViewStaffDiary />, ["staff"])}
+        // />
 
 
         {/* ====================================
             EVENTS
         ==================================== */}
 
-        <Route
-          path="/events/add"
-          element={protect(<EventDetails />)}
-        />
+        // <Route
+        //   path="/events/add"
+        //   element={protect(<EventDetails />)}
+        // />
 
-        <Route
-          path="/events/edit/:id"
-          element={protect(<EventDetails />)}
-        />
+        // <Route
+        //   path="/events/edit/:id"
+        //   element={protect(<EventDetails />)}
+        // />
 
-        <Route
-          path="/admin/events/manage"
-          element={protect(<ViewEvents role="admin" />, ["admin"])}
-        />
+        // <Route
+        //   path="/admin/events/manage"
+        //   element={protect(<ViewEvents role="admin" />, ["admin"])}
+        // />
 
-        <Route
-          path="/staff/events/manage"
-          element={protect(<ViewEvents role="staff" />, ["staff"])}
-        />
+        // <Route
+        //   path="/staff/events/manage"
+        //   element={protect(<ViewEvents role="staff" />, ["staff"])}
+        // />
 
 
         {/* ====================================
             MEETINGS
         ==================================== */}
 
-        <Route
-          path="/meetings/add"
-          element={protect(<MeetingMinutes />, ["staff"])}
-        />
+        // <Route
+        //   path="/meetings/add"
+        //   element={protect(<MeetingMinutes />, ["staff"])}
+        // />
 
-        <Route
-          path="/meetings/edit/:id"
-          element={protect(<MeetingMinutes />)}
-        />
+        // <Route
+        //   path="/meetings/edit/:id"
+        //   element={protect(<MeetingMinutes />)}
+        // />
 
-        <Route
-          path="/admin/meetings/manage"
-          element={protect(<ViewMeetingMinutes role="admin" />, ["admin"])}
-        />
+        // <Route
+        //   path="/admin/meetings/manage"
+        //   element={protect(<ViewMeetingMinutes role="admin" />, ["admin"])}
+        // />
 
-        <Route
-          path="/staff/meetings/manage"
-          element={protect(<ViewMeetingMinutes role="staff" />, ["staff"])}
-        />
+        // <Route
+        //   path="/staff/meetings/manage"
+        //   element={protect(<ViewMeetingMinutes role="staff" />, ["staff"])}
+        // />
 
 
         {/* ====================================
             DOCUMENTS
         ==================================== */}
 
-        <Route
-          path="/admin/documents/manage"
-          element={protect(<ViewDocument role="admin" />, ["admin"])}
-        />
+        // <Route
+        //   path="/admin/documents/manage"
+        //   element={protect(<ViewDocument role="admin" />, ["admin"])}
+        // />
 
-        <Route
-          path="/staff/documents/manage"
-          element={protect(<ViewDocument role="staff" />, ["staff"])}
-        />
+        // <Route
+        //   path="/staff/documents/manage"
+        //   element={protect(<ViewDocument role="staff" />, ["staff"])}
+        // />
 
-        <Route
-          path="/documents/upload"
-          element={protect(<Document />, ["staff"])}
-        />
+        // <Route
+        //   path="/documents/upload"
+        //   element={protect(<Document />, ["staff"])}
+        // />
 
 
         {/* ====================================
             DONATIONS
         ==================================== */}
 
-        <Route
-          path="/donations/add"
-          element={protect(<DonationForm role="staff" />, ["staff"])}
-        />
+        // <Route
+        //   path="/donations/add"
+        //   element={protect(<DonationForm role="staff" />, ["staff"])}
+        // />
 
-        <Route
-          path="/admin/donations/manage"
-          element={protect(<ViewDonations role="admin" />, ["admin"])}
-        />
+        // <Route
+        //   path="/admin/donations/manage"
+        //   element={protect(<ViewDonations role="admin" />, ["admin"])}
+        // />
 
-        <Route
-          path="/staff/donations/manage"
-          element={protect(<ViewDonations role="staff" />, ["staff"])}
-        />
+        // <Route
+        //   path="/staff/donations/manage"
+        //   element={protect(<ViewDonations role="staff" />, ["staff"])}
+        // />
 
 
         {/* ====================================
             REPORTS
         ==================================== */}
 
-        <Route
-          path="/reports/student-project"
-          element={protect(<ReportForm />, ["staff"])}
-        />
+        // <Route
+        //   path="/reports/student-project"
+        //   element={protect(<ReportForm />, ["staff"])}
+        // />
 
-        <Route
-          path="/staff/reports/manage"
-          element={protect(<ViewReport role="staff" />, ["staff"])}
-        />
+        // <Route
+        //   path="/staff/reports/manage"
+        //   element={protect(<ViewReport role="staff" />, ["staff"])}
+        // />
 
 
         {/* ====================================
             ACCOUNTS
         ==================================== */}
 
-        <Route
-          path="/accounts"
-          element={protect(<Accounts role={currentRole} />)}
-        />
+        // <Route
+        //   path="/accounts"
+        //   element={protect(<Accounts role={currentRole} />)}
+        // />
 
 
         {/* ====================================
             STAFF ATTENDANCE
         ==================================== */}
 
-        <Route
-          path="/staff-attendance/manage"
-          element={protect(
-            <ViewStaffAttendance role={currentRole} />
-          )}
-        />
+        // <Route
+        //   path="/staff-attendance/manage"
+        //   element={protect(
+        //     <ViewStaffAttendance role={currentRole} />
+        //   )}
+        // />
 
-        <Route
-          path="/staff/add-attendance"
-          element={protect(<StaffAttendance />, ["staff"])}
-        />
+        // <Route
+        //   path="/staff/add-attendance"
+        //   element={protect(<StaffAttendance />, ["staff"])}
+        // />
 
 
         {/* ====================================
