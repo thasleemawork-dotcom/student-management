@@ -135,10 +135,7 @@ function App() {
             ADMIN STAFF
         ==================================== */}
 
-        // <Route
-        //   path="/admin/add-staff"
-        //   element={protect(<AdminAddEditStaff />, ["admin"])}
-        // />
+
 
         // <Route
         //   path="/admin/staff/manage"
